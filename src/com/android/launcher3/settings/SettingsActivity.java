@@ -48,6 +48,7 @@ import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.util.Executors;
 import com.android.launcher3.util.SettingsCache;
+import com.android.launcher3.lineage.LineageUtils;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
@@ -66,6 +67,10 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
 
     private static final int DELAY_HIGHLIGHT_DURATION_MILLIS = 600;
     public static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
+
+    @VisibleForTesting
+    private static final String KEY_MINUS_ONE = "pref_enable_minus_one";
+    private static final String SEARCH_PACKAGE = "com.google.android.googlequicksearchbox";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

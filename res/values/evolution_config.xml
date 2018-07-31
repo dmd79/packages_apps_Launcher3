@@ -27,4 +27,6 @@
 
     <!-- String representing the fragment class for recents view settings activity.-->
     <string name="recents_settings_fragment_name" translatable="false">com.android.launcher3.settings.SettingsRecents$RecentsSettingsFragment</string>
+
+    <string name="pref_show_google_now_summary" translatable="false">@string/msg_minus_one_on_left</string>
 </resources>
